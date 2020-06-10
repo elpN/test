@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/*---Reset---*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+img {
+  border-style: none;
+  display: block;
+}
+hr {
+  display: none;
+}
+em {
+  font-style: normal;
+}
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+strong.more {
+  color: #c30;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  width: 100%;
+}
+
+/*クラス定義*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-table;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+* + html .clearfix {
+  min-height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* End hide from IE-mac */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+em {
+  font-style: normal;
+}
+
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+
+html {
+  height: 100%;
+}
+
+p {
+  text-align: center;
+  font-family: "游ゴシック体";
+}
+
+a {
+  text-align: center;
+  font-family: "游ゴシック";
+}
+
+li p {
+  margin: 0;
+  padding: 0;
+}
+/* ここから書いてく */
+
+#top {
+  height: 100vh;
+  background-image: url("../img/index/bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#top p {
+  color: #fff;
+}
+
+#header {
+  margin: 0 auto;
+  width: 1140px;
+  padding-top: 30px;
+  border-bottom: solid thin #fff;
+}
+
+#logo {
+  height: 59px;
+  width: 170px;
+  background-color: #fff;
+  z-index: 1;
+  float: left;
+}
+
+#logo img {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact_h {
+  font-size: 15px;
+  padding-bottom: 25px;
+}
+
+#navi {
+  margin: 0 auto;
+  margin-top: -15px;
+}
+
+#navi ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+#navi p {
+  font-size: 15px;
+  margin-bottom: -5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#tel_txt p {
+  font-size: 20px;
+  margin-right: -5px;
+  margin-top: -5px;
+}
+
+#tel p {
+  font-size: 30px;
+  margin-top: -15px;
+  margin-right: -3px;
+}
+
+#navi a {
+  font-size: 15px;
+  color: #fff;
+}
+
+#top_text {
+  margin-top: 100px;
+}
+
+#top_text img {
+  margin: 0 auto;
+}
+
+#scrolltext {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  text-align: center;
+  border: solid thin #fff;
+  padding: 20px;
+}
+
+#scrolltext a {
+  font: 20px;
+  color: #fff;
+}
+
+#content_wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#company_menu {
+  background-color: #f8f8f8;
+  padding-bottom: 50px;
+}
+
+#company_menu p {
+  color: #000;
+}
+
+#company_menu img {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#box1 {
+  display: flex;
+  margin: 0 auto;
+  width: 920px;
+}
+
+#box2 {
+  display: flex;
+  margin: 0 auto;
+  width: 920px;
+}
+
+#content_box {
+  width: 800px;
+}
+
+#title {
+  padding-top: 30px;
+}
+
+#title p {
+  font-size: 35px;
+  color: #237abd;
+}
+
+#title_border p {
+  margin-top: -20px;
+  font-size: 35px;
+  color: #237abd;
+}
+
+#service_wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+#service_box1 {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#service_box2 {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.service_box {
+  margin: 0 auto;
+  width: 293px;
+  z-index: 1;
+}
+
+.service_box p {
+  margin-top: 10px;
+  color: #237abd;
+}
+
+.service_box::after {
+  content: "";
+  top: -45px;
+  left: 10px;
+  padding-top: 165px;
+  padding-right: 293px;
+  background-color: rgb(0, 111, 214);
+  z-index: -1;
+  position: relative;
+}
+
+#recruit_wrapper {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+#recruit_box {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+#recruit_box img {
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+#recruit_text p {
+  padding-top: 20px;
+  color: #fff;
+}
+
+#recruit_rbox {
+  width: 400px;
+  height: 300px;
+  background: url("../img/index/recruit.png") no-repeat;
+}
+
+#recruit_cbox {
+  width: 400px;
+  height: 300px;
+  background: url("../img/index/company.png") no-repeat;
+}
+
+#footer p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
